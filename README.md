@@ -128,5 +128,4 @@ Vinaytz - developervinaytz@gmail.com
 Project Link: [https://github.com/vinaytz/Vphisher](https://github.com/vinaytz/Vphisher)
 
 Ultimately, your social skills are what really count :)
- 
-<div style="text-align: center; font-weight:bold; font-size:20px; margin-top:20px">Vphisher 💚</div>
+<p align="center"><strong style="font-size: 20px;">Vphisher 💚</strong></p>
