@@ -1,7 +1,6 @@
 # Vphisher
 Vphisher is an open-source phishing tool designed to demonstrate the vulnerabilities of social engineering attacks, specifically targeting Instagram reel links. It provides a simulated environment to understand how phishing campaigns can be orchestrated and how to protect against them.
 
-<img src="public/vphisher_logo.png" alt="Vphisher Logo" style="border-radius: 15px; margin:12px 0">
 
 **Disclaimer:** This tool is intended for educational and ethical hacking purposes only. Misuse of this software for illegal activities is strictly prohibited and the developers are not responsible for any such actions.
 
