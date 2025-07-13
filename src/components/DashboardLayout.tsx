@@ -8,8 +8,7 @@ import { toast } from 'sonner';
 import { useNavigate } from 'react-router-dom';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { LogOut, Link2, Film, Mail, Menu, Settings, Bell, Users, BarChart2 } from 'lucide-react';
-import { ThemeToggle } from '@/components/ThemeToggle';
+import { LogOut, Link2, Film, Mail, Menu, Users } from 'lucide-react';
 
 const navLinks = [
   { href: '/dashboard/create', label: 'Create Link', icon: Link2 },
@@ -105,17 +104,13 @@ export default function DashboardLayout() {
                   <Menu className="h-6 w-6" />
                 </Button>
               </SheetTrigger>
-              <SheetContent side="left" className="w-72 p-0 bg-gray-900 border-r-0">
+              <SheetContent side="left" className="text-blue-100 w-72 p-0 bg-gray-900 border-r-0">
                 <SidebarContent />
               </SheetContent>
             </Sheet>
             <h1 className="text-xl font-semibold text-gray-100">{getPageTitle()}</h1>
           </div>
           <div className="flex items-center gap-4">
-            <Button variant="ghost" size="icon" className="text-gray-300 hover:bg-gray-800/50">
-              <Bell className="h-5 w-5" />
-            </Button>
-            <ThemeToggle />
             <Button
               onClick={handleLogout}
               variant="ghost"

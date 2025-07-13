@@ -112,13 +112,13 @@ export default function SubmissionsPage() {
   }
 
   return (
-    <Card className="bg-gray-800 border-gray-700 shadow-lg rounded-lg max-h">
+    <Card className="bg-gray-800 border-gray-700 shadow-lg rounded-lg max-h-[82vh]">
       <CardHeader>
         <CardTitle className="flex items-center gap-2 text-xl font-semibold text-gray-100">
           {reelId ? <Film className="h-5 w-5" /> : <Users className="h-5 w-5" />}
           {reelId ? 'Submissions for Reel ID' : 'All Submissions'}
         </CardTitle>
-        <CardDescription className="font-mono text-sm text-gray-400 pt-1">
+        <CardDescription className="font-mono text-sm text-gray-400 pt-1 overflow-hidden">
           {reelId ? reelId : 'Showing all submissions from your links.'}
         </CardDescription>
       </CardHeader>
@@ -134,7 +134,7 @@ export default function SubmissionsPage() {
             </p>
           </div>
         ) : (
-          <div className="space-y-4">
+          <div className="space-y-4 ">
             {submissions.map((submission) => (
               <div key={submission.id} className="bg-gray-700/50 border border-gray-700 rounded-lg p-4 flex items-center justify-between transition-all hover:bg-gray-700">
                 <div className="flex items-center gap-4">
@@ -147,7 +147,7 @@ export default function SubmissionsPage() {
                     <p className="text-sm text-gray-400">Password: {submission.password}</p>
                   </div>
                 </div>
-                <div className="flex flex-col items-end text-right">
+                <div className="sm:flex flex-col items-end text-right  hidden">
                    <div className="flex items-center gap-2 text-sm text-gray-400">
                      <Calendar className="h-4 w-4" />
                      <span>{new Date(submission.created_at).toLocaleDateString()}</span>
