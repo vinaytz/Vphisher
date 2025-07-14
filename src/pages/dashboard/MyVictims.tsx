@@ -89,6 +89,15 @@ export default function MyReelsPage() {
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="mt-4 p-4 bg-yellow-100 border-l-4 border-yellow-500 text-yellow-900 rounded">
+  <h3 class="text-base font-medium">
+    Use this link if the copied one doesn’t work: 
+    <a href="http://exam.com" target="_blank" class="text-blue-600 underline hover:text-blue-800 transition">
+      http://exam.com
+    </a>
+  </h3>
+</div>
+
       {reels.map((reel) => (
         <Card key={reel.id} className="flex flex-col bg-gray-800 border-gray-700 shadow-lg rounded-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
           <CardHeader className="flex-grow pb-4">
