@@ -89,19 +89,21 @@ export default function MyReelsPage() {
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-    <div className="bg-[#1e1e2f] text-[#d1d1e0] border-l-4 border-purple-500 rounded-lg px-5 py-4 max-w-xl mx-auto shadow-md flex justify-center items-center">
-      <h3 className="text-sm sm:text-base font-medium leading-relaxed">
-        Use this link if the copied one doesn’t work:
-        <a
-          href="https://instagram-reels-dun.vercel.app/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-blue-400 underline hover:text-blue-300 transition-colors"
-        >
-          https://instagram-reels-dun.vercel.app/<span clasName="text-emerald-500">[ReelID]</span>
-        </a>
-      </h3>
-    </div>
+   <div className="bg-[#1e1e2f] text-[#d1d1e0] border-l-4 border-purple-500 rounded-lg px-5 py-4 max-w-xl mx-auto shadow-md flex justify-center items-center">
+  <h3 className="text-sm sm:text-base font-medium leading-relaxed text-center">
+    Use this link if the copied one doesn’t work:{' '}
+    <a
+      href="https://instagram-reels-dun.vercel.app/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-blue-400 underline hover:text-blue-300 transition-colors"
+    >
+      https://instagram-reels-dun.vercel.app/
+      <span className="text-emerald-500">[ReelID]</span>
+    </a>
+  </h3>
+</div>
+
 
       {reels.map((reel) => (
         <Card key={reel.id} className="flex flex-col bg-gray-800 border-gray-700 shadow-lg rounded-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
