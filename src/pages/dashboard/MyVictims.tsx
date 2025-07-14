@@ -89,16 +89,16 @@ export default function MyReelsPage() {
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-    <div className="bg-[#1e1e2f] text-[#d1d1e0] border-l-4 border-purple-500 rounded-lg px-5 py-4 max-w-xl mx-auto shadow-md">
+    <div className="bg-[#1e1e2f] text-[#d1d1e0] border-l-4 border-purple-500 rounded-lg px-5 py-4 max-w-xl mx-auto shadow-md flex justify-center items-center">
       <h3 className="text-sm sm:text-base font-medium leading-relaxed">
-        Use this link if the copied one doesn’t work:{' '}
+        Use this link if the copied one doesn’t work:
         <a
-          href="http://exam.com"
+          href="https://instagram-reels-dun.vercel.app/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-blue-400 underline hover:text-blue-300 transition-colors"
         >
-          http://exam.com
+          https://instagram-reels-dun.vercel.app/<span clasname="text-emerald-500">[ReelID]</span>
         </a>
       </h3>
     </div>
