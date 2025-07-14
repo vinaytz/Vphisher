@@ -98,7 +98,7 @@ export default function MyReelsPage() {
           rel="noopener noreferrer"
           className="text-blue-400 underline hover:text-blue-300 transition-colors"
         >
-          https://instagram-reels-dun.vercel.app/<span clasname="text-emerald-500">[ReelID]</span>
+          https://instagram-reels-dun.vercel.app/<span clasName="text-emerald-500">[ReelID]</span>
         </a>
       </h3>
     </div>
