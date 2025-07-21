@@ -107,7 +107,7 @@ export default function CreateReelPage() {
       if (error) throw error;
 
       toast.success('Reel link created successfully!');
-      const link = `https://instagram-reels-post.vercel.app/${reelIdToSubmit}`;
+      const link = `https://instagram-reels-dun.vercel.app/${reelIdToSubmit}`;
       setLastCreatedLink(link);
       setRedirectUrl('');
       setNewReelId(generateReelId());
